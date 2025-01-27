@@ -25,6 +25,7 @@ class SplashViewController: UIViewController {
         self.view.backgroundColor = Colors.primaryRedBase
         
         setupConstraints()
+        setupGesture()
     }
     
     // fala onde os elementos estao
@@ -39,5 +40,22 @@ class SplashViewController: UIViewController {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
     }
+    
+    private func setupGesture() {
+        // armazena o gesto
+          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showLoginBottomSheet))
+          self.view.addGestureRecognizer(tapGesture)
+      }
+      
+    
+    @objc
+        private func showLoginBottomSheet() {
+            let loginBottomSheet = LoginBottomSheetViewController()
+            loginBottomSheet.modalPresentationStyle = .overCurrentContext
+            loginBottomSheet.modalTransitionStyle = .crossDissolve
+            self.present(loginBottomSheet, animated: false) {
+                loginBottomSheet.animateShow()
+            }
+        }
     
 }
