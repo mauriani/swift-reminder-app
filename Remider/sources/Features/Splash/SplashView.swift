@@ -25,15 +25,6 @@ class SplashView: UIView {
         return image
     }()
     
-    private let titleLogoLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Remind"
-        label.font = UIFont.boldSystemFont(ofSize: 32)
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
     init(){
         super.init(frame: .zero)
         setupUI()
@@ -42,11 +33,8 @@ class SplashView: UIView {
         fatalError("has not been implemented")
     }
     private func setupUI() {
-        self.backgroundColor = .systemRed
-        
         self.addSubview(logoImageView)
-        self.addSubview(titleLogoLabel)
-        
+               
         setupConstraints()
         
     }
@@ -54,9 +42,8 @@ class SplashView: UIView {
     // onde ele vai se
     private func setupConstraints(){
         NSLayoutConstraint.activate([
-            logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            logoImageView.trailingAnchor.constraint(equalTo: titleLogoLabel.leadingAnchor, constant: -8)
+                  logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+                  logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -Metrics.medium),
         ])
     }
 }
