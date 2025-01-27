@@ -48,16 +48,6 @@
 			path = Remider;
 			sourceTree = "<group>";
 		};
-		76F34E852D3C84BF00A30E3C /* RemiderTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RemiderTests;
-			sourceTree = "<group>";
-		};
-		76F34E8F2D3C84BF00A30E3C /* RemiderUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RemiderUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				76F34E6E2D3C84BD00A30E3C /* Remider */,
-				76F34E852D3C84BF00A30E3C /* RemiderTests */,
-				76F34E8F2D3C84BF00A30E3C /* RemiderUITests */,
 				76F34E6D2D3C84BD00A30E3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				76F34E842D3C84BF00A30E3C /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				76F34E852D3C84BF00A30E3C /* RemiderTests */,
-			);
 			name = RemiderTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				76F34E8E2D3C84BF00A30E3C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				76F34E8F2D3C84BF00A30E3C /* RemiderUITests */,
 			);
 			name = RemiderUITests;
 			packageProductDependencies = (
@@ -293,7 +275,6 @@
 				INFOPLIST_FILE = Remider/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +301,6 @@
 				INFOPLIST_FILE = Remider/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
