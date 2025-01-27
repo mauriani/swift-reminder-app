@@ -1,0 +1,23 @@
+//
+//  Localizable.strings
+//  Remider
+//
+//  Created by Mauriani Maciel Lima on 27/01/25.
+//
+
+/* MARK: - LOGIN Screen */
+
+"login.label.title" = "Entre para acessar suas receitas";
+"login.email.placeholder" = "email@exemplo.com";
+"login.password.placeholder" = "senha";
+"login.button.title" = "Entrar";
+"login.loginText.label.title" = "E-mail";
+"login.passwordText.label.title" = "Senha" ;
+
+/* MARK: - HOME Screen */
+
+
+/* MARK: - Receipts Screen */
+
+
+/* MARK: - NewReceipt Screen */
