@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		046BBF4AB5F92B363C5B2A0F /* Pods_RemiderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CFB5E5A927D1C5E61BB620 /* Pods_RemiderTests.framework */; };
+		6BFDA7FA7EB4F262CDA22842 /* Pods_Remider_RemiderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FEDF4D3AD91A017DE94048 /* Pods_Remider_RemiderUITests.framework */; };
+		76BCFDBB2D4965E800E83F6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76BCFDBA2D4965E800E83F6F /* GoogleService-Info.plist */; };
+		D136B13128059BED0A679E80 /* Pods_Remider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E04025C56E5196A7B4F89 /* Pods_Remider.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		76F34E832D3C84BF00A30E3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +31,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FEDF4D3AD91A017DE94048 /* Pods_Remider_RemiderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remider_RemiderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2847B286C8C3935D4C818FA0 /* Pods-RemiderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemiderTests.release.xcconfig"; path = "Target Support Files/Pods-RemiderTests/Pods-RemiderTests.release.xcconfig"; sourceTree = "<group>"; };
+		63D34425F3C309F3B297836B /* Pods-Remider-RemiderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remider-RemiderUITests.release.xcconfig"; path = "Target Support Files/Pods-Remider-RemiderUITests/Pods-Remider-RemiderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		76BCFDBA2D4965E800E83F6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76F34E6C2D3C84BD00A30E3C /* Remider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F34E822D3C84BF00A30E3C /* RemiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F34E8C2D3C84BF00A30E3C /* RemiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CFB5E5A927D1C5E61BB620 /* Pods_RemiderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemiderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85E04025C56E5196A7B4F89 /* Pods_Remider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE68A3E4D85831D1BC6A530 /* Pods-RemiderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemiderTests.debug.xcconfig"; path = "Target Support Files/Pods-RemiderTests/Pods-RemiderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5C302A14C1EDC5FFA9DAA48 /* Pods-Remider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remider.debug.xcconfig"; path = "Target Support Files/Pods-Remider/Pods-Remider.debug.xcconfig"; sourceTree = "<group>"; };
+		FB479B7141628D52B595DF7D /* Pods-Remider-RemiderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remider-RemiderUITests.debug.xcconfig"; path = "Target Support Files/Pods-Remider-RemiderUITests/Pods-Remider-RemiderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFCDF6AF3159636342716668 /* Pods-Remider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remider.release.xcconfig"; path = "Target Support Files/Pods-Remider/Pods-Remider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -55,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D136B13128059BED0A679E80 /* Pods_Remider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046BBF4AB5F92B363C5B2A0F /* Pods_RemiderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,17 +88,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFDA7FA7EB4F262CDA22842 /* Pods_Remider_RemiderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D1662BD35D82EC5A7DCC7D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85E04025C56E5196A7B4F89 /* Pods_Remider.framework */,
+				08FEDF4D3AD91A017DE94048 /* Pods_Remider_RemiderUITests.framework */,
+				A0CFB5E5A927D1C5E61BB620 /* Pods_RemiderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26EF0A3D02FFCD1F99EF4AA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5C302A14C1EDC5FFA9DAA48 /* Pods-Remider.debug.xcconfig */,
+				FFCDF6AF3159636342716668 /* Pods-Remider.release.xcconfig */,
+				FB479B7141628D52B595DF7D /* Pods-Remider-RemiderUITests.debug.xcconfig */,
+				63D34425F3C309F3B297836B /* Pods-Remider-RemiderUITests.release.xcconfig */,
+				DBE68A3E4D85831D1BC6A530 /* Pods-RemiderTests.debug.xcconfig */,
+				2847B286C8C3935D4C818FA0 /* Pods-RemiderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		76F34E632D3C84BD00A30E3C = {
 			isa = PBXGroup;
 			children = (
+				76BCFDBA2D4965E800E83F6F /* GoogleService-Info.plist */,
 				76F34E6E2D3C84BD00A30E3C /* Remider */,
 				76F34E6D2D3C84BD00A30E3C /* Products */,
+				26EF0A3D02FFCD1F99EF4AA1 /* Pods */,
+				0D1662BD35D82EC5A7DCC7D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F34E952D3C84C000A30E3C /* Build configuration list for PBXNativeTarget "Remider" */;
 			buildPhases = (
+				56FB2C7480873505B25349BE /* [CP] Check Pods Manifest.lock */,
 				76F34E682D3C84BD00A30E3C /* Sources */,
 				76F34E692D3C84BD00A30E3C /* Frameworks */,
 				76F34E6A2D3C84BD00A30E3C /* Resources */,
+				0F3235223938FCAFE2E4CDEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,8 +160,6 @@
 				76F34E6E2D3C84BD00A30E3C /* Remider */,
 			);
 			name = Remider;
-			packageProductDependencies = (
-			);
 			productName = Remider;
 			productReference = 76F34E6C2D3C84BD00A30E3C /* Remider.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F34E9A2D3C84C000A30E3C /* Build configuration list for PBXNativeTarget "RemiderTests" */;
 			buildPhases = (
+				C91AF19E89A2D5629B70889D /* [CP] Check Pods Manifest.lock */,
 				76F34E7E2D3C84BF00A30E3C /* Sources */,
 				76F34E7F2D3C84BF00A30E3C /* Frameworks */,
 				76F34E802D3C84BF00A30E3C /* Resources */,
@@ -132,8 +179,6 @@
 				76F34E842D3C84BF00A30E3C /* PBXTargetDependency */,
 			);
 			name = RemiderTests;
-			packageProductDependencies = (
-			);
 			productName = RemiderTests;
 			productReference = 76F34E822D3C84BF00A30E3C /* RemiderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -142,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F34E9D2D3C84C000A30E3C /* Build configuration list for PBXNativeTarget "RemiderUITests" */;
 			buildPhases = (
+				E2D1059912F7845CE2AC5E47 /* [CP] Check Pods Manifest.lock */,
 				76F34E882D3C84BF00A30E3C /* Sources */,
 				76F34E892D3C84BF00A30E3C /* Frameworks */,
 				76F34E8A2D3C84BF00A30E3C /* Resources */,
+				BA663607D02CFEBF1CEE9824 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,8 +199,6 @@
 				76F34E8E2D3C84BF00A30E3C /* PBXTargetDependency */,
 			);
 			name = RemiderUITests;
-			packageProductDependencies = (
-			);
 			productName = RemiderUITests;
 			productReference = 76F34E8C2D3C84BF00A30E3C /* RemiderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -207,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BCFDBB2D4965E800E83F6F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +271,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F3235223938FCAFE2E4CDEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remider/Pods-Remider-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remider/Pods-Remider-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Remider/Pods-Remider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56FB2C7480873505B25349BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA663607D02CFEBF1CEE9824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remider-RemiderUITests/Pods-Remider-RemiderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remider-RemiderUITests/Pods-Remider-RemiderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Remider-RemiderUITests/Pods-Remider-RemiderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91AF19E89A2D5629B70889D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemiderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D1059912F7845CE2AC5E47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remider-RemiderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76F34E682D3C84BD00A30E3C /* Sources */ = {
@@ -266,6 +415,7 @@
 /* Begin XCBuildConfiguration section */
 		76F34E962D3C84C000A30E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C302A14C1EDC5FFA9DAA48 /* Pods-Remider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +442,7 @@
 		};
 		76F34E972D3C84C000A30E3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCDF6AF3159636342716668 /* Pods-Remider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,7 +504,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -416,7 +567,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -437,6 +588,7 @@
 		};
 		76F34E9B2D3C84C000A30E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE68A3E4D85831D1BC6A530 /* Pods-RemiderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +607,7 @@
 		};
 		76F34E9C2D3C84C000A30E3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2847B286C8C3935D4C818FA0 /* Pods-RemiderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +626,7 @@
 		};
 		76F34E9E2D3C84C000A30E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB479B7141628D52B595DF7D /* Pods-Remider-RemiderUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -489,6 +643,7 @@
 		};
 		76F34E9F2D3C84C000A30E3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D34425F3C309F3B297836B /* Pods-Remider-RemiderUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

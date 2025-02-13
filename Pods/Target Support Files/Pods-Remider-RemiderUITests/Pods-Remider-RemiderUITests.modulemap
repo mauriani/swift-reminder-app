@@ -1,0 +1,6 @@
+framework module Pods_Remider_RemiderUITests {
+  umbrella header "Pods-Remider-RemiderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
+// MVVM-C
 class LoginBottomSheetViewController: UIViewController {
+    var mainNavigation: UINavigationController?
     let loginView = LoginBottomSheetView()
+    let viewModel = LoginBottomSheetViewModel()
     var handleAreaHeight: CGFloat = 50.0
     
     override func viewDidLoad() {
@@ -18,14 +21,27 @@ class LoginBottomSheetViewController: UIViewController {
         
         setupUI()
         setupGesture()
+        bindViewModel()
     }
-    
+    // funcao que garante que a view vai aparecer na tela
     private func setupUI() {
         self.view.addSubview(loginView)
         loginView.translatesAutoresizingMaskIntoConstraints = false
         
+        // define as constraints do layout, definindo que o LoginBottomSheetView ocupe 505 da tela
         setupConstraints()
     }
+    
+    private func bindViewModel () {
+        viewModel.successResult = {
+                [weak self] in
+            let viewController = UIViewController()
+                        viewController.view.backgroundColor = .red
+                        self?.dismiss(animated: false)
+            // fazendo a navegacao
+                        self?.mainNavigation?.pushViewController(viewController, animated: true)
+            }
+        }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
@@ -36,6 +52,7 @@ class LoginBottomSheetViewController: UIViewController {
         
         let heightConstraint = loginView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.5).isActive = true
     }
+    
     
     private func setupGesture() {
         //proxima aula
@@ -59,8 +76,11 @@ class LoginBottomSheetViewController: UIViewController {
     }
 }
 
+// CHAMADO QUANDO O BOTAO DE LOGIN é pressionado
+// Faz parte do protocolo LoginBottomSheetViewDelegate e é chamado quando o botão de login é pressionado.
+// Recebe os dados de login passa as informacoes ViewModel que faz autenticacao
 extension LoginBottomSheetViewController: LoginBottomSheetViewDelegate {
     func sendLoginData(user: String, password: String) {
-        print(user, password)
+        viewModel.doAuth(usernameLogin: user, password: password)
     }
 }

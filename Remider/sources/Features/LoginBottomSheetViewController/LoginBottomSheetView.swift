@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class LoginBottomSheetView: UIView {
+    // variavel fraca
     public weak var delegate: LoginBottomSheetViewDelegate?
     
     private let titleLabel: UILabel = {
@@ -21,12 +22,7 @@ class LoginBottomSheetView: UIView {
         return label
     }()
     
-    @objc
-    private func loginButtonTapped() {
-        let password = passwordTextField.text ?? ""
-        let user = emailTextField.text ?? ""
-        delegate?.sendLoginData(user: user, password: password)
-    }
+  
     
     private let loginTextFieldLabel: UILabel = {
         let label = UILabel()
@@ -146,4 +142,15 @@ class LoginBottomSheetView: UIView {
             loginButton.heightAnchor.constraint(equalToConstant: Metrics.buttonSize)
         ])
     }
+    
+    // Essa função é chamada quando o botão de login é pressionado.
+    // ler os campos de email e senha e chama o metodo delegate
+    
+    @objc
+    private func loginButtonTapped() {
+        let password = passwordTextField.text ?? ""
+        let user = emailTextField.text ?? ""
+        delegate?.sendLoginData(user: user, password: password)
+    }
+    
 }
